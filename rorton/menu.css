@@ -1,0 +1,111 @@
+*{
+    padding: 0;
+    margin:0;
+    box-sizing: border-box;
+    
+}
+body{
+    background: #d6d5d5;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+#tete1{
+    text-align: center;
+    color: #878fff;
+     font-size: 20px;
+     font-weight: 500;
+}
+nav{
+    position: sticky;
+    top: 0;
+    z-index: 200;
+}
+.bar{
+    position: relative;
+    height: 100px;
+    width: 100%;
+    background: rgb(50, 50, 51);
+}
+
+.onglet{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.onglet a{
+    position: relative;
+    text-decoration: none;
+    color: #436fff;
+    margin-top: 10px;  
+}
+
+.onglet a::after{
+content:"";
+position: absolute;
+width: 0;
+height: 12px;
+background: #436fff;
+left: 0;
+bottom: -20px; 
+transition: 0.7s;
+}
+.onglet a:hover:after{
+    width: 100%;
+}
+.onglet a:hover{
+    font-size: 15px;
+    color: rgb(163, 163, 255);
+}
+.box{
+    height: 800px;
+    width: 600px;
+    background: #436fff;
+    margin-left: 600px;
+    margin-top: 30px;
+    border-radius: 15px;
+    box-shadow: 2px 11px 20px 9px black;
+}
+h2{
+    text-align: center;
+    color: white;
+}
+.input{
+    height: 50px;
+    width: 400px;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+input{
+    font-size: 20px;
+    color:#436fff;
+}
+.input::placeholder{ 
+    font-size: 20px;
+}
+.boutonn{
+    height: 60px;
+    width:300px;
+    margin-left: 25%;
+    margin-top: 70px;
+    border-radius: 10px;
+    font-size: 20px;
+    color:#436fff;
+    transition: 0.6s;
+    font-weight: 800;
+}
+.boutonn:hover{
+   background: rgb(58, 58, 255);
+} 
+table tr td{
+    color: white;
+}
+#sms{
+    height: 60px;
+    width: 60px;
+    background: #878fff69;
+    border-radius: 50%;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+

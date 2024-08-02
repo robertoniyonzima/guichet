@@ -1,0 +1,211 @@
+/* *{
+    padding: 0;
+    margin:0;
+    box-sizing: border-box;
+    
+}
+body{
+    background: #d6d5d5;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+nav{
+    position: sticky;
+    top: 0;
+    z-index: 200;
+}
+#tete1{
+    text-align: center;
+    color: #878fff;
+     font-size: 20px;
+     font-weight: 500;
+}
+.bar{
+    height: 100px;
+    width: 100%;
+    background: rgb(50, 50, 51);
+}
+.onglet{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 30px;
+}
+.onglet a{
+    position: relative;
+    text-decoration: none;
+    color: #436fff;
+    
+}
+
+.onglet a::after{
+content:"";
+position: absolute;
+width: 0;
+height: 20px;
+background: #436fff;
+left: 0;
+bottom: -20px; 
+transition: 0.7s;
+}
+.onglet a:hover:after{
+    width: 100%;
+}
+.onglet a:hover{
+    font-size: 15px;
+    color: rgb(163, 163, 255);
+} */
+.main{
+    height: 60rem;
+    width: 100%;
+    border: 2px solid red;
+}
+.bienvenue
+{
+    height: 50rem;
+    width: 80%;
+    margin: 0 auto;
+    background-image: url('./guichet/bigatm.png');
+    background-size: cover;
+    border-radius: 200px 400px 500px 20px;
+    margin-bottom: 10px;
+}
+p{
+    color: white;
+}
+.bienvenue p{
+    text-align: center;
+    padding-top: 300px;
+    font-size: 30px;
+}
+ .mainbox{
+    position: relative;
+    height: 700px;
+    width: 100%;
+}
+
+.container, .container2{
+    display: flex;
+    justify-content: space-around;
+    padding-top: 10px;
+} 
+
+.onee{
+    height: 280px;
+    width: 280px;
+    background:red;
+    border-radius: 15px;
+    border: 8px solid #333;
+}
+.box1{
+   background-image: url('./guichet/guichet.jpeg');
+   background-size: cover;
+   background-repeat: no-repeat;
+}
+.box2{
+    background-image: url('./guichet/guichet2.jpeg');
+    background-size: cover;
+    background-repeat: no-repeat;
+ }
+ .box3{
+    background-image: url('./guichet/guichet3.jpeg');
+    background-size: cover;
+    background-repeat: no-repeat;
+ }
+ .box4{
+    background-image: url('./guichet/guichet5.jpeg');
+    background-size: cover;
+    background-repeat: no-repeat;
+ }
+ .box6{
+    background-image: url('./guichet/guichet6.jpg');
+    position: cover;
+    background-repeat: no-repeat;
+ }
+ .box7{
+    background-image: url('./guichet/guichet7.jpeg');
+    background-size: cover;
+    background-repeat: no-repeat;
+ }
+ .box8{
+    background-image: url('./guichet/guichet8.jpeg');
+    background-size: cover;
+    background-repeat: no-repeat;
+ }
+ .box9{
+    background-image: url('./guichet/guichet10.jpeg');
+    background-size: cover;
+    background-repeat: no-repeat;
+ }
+ .box10{
+    background-image: url('./guichet/maniguichet.jpeg');
+    background-size: cover;
+    background-repeat: no-repeat;
+ }
+ .box11{
+    background-image: url('./guichet/guichet7.jpeg');
+    background-size: cover;
+    background-repeat: no-repeat;
+ }
+ /* ... Styles existants ... */
+
+
+/* ... votre CSS actuel ... */
+
+.profile-picture {
+    width: 100px; /* Définissez la largeur de la photo de profil */
+    height: 100px; /* Définissez la hauteur de la photo de profil */
+    border-radius: 50%; /* Créer une forme ronde */
+    overflow: hidden; /* Masquer tout débordement de l'image */
+    position: relative; /* Positionnez les éléments enfants */
+    margin: 20px; /* Centrez la photo */
+}
+
+.profile-picture img {
+    width: 100%; /* Faites en sorte que l'image occupe toute la largeur du conteneur */
+    height: auto; /* Laissez la hauteur s'ajuster automatiquement */
+}
+
+.edit-profile-picture {
+    position: absolute;
+    bottom: -2px; /* Positionnez le bouton en bas à droite */
+    right: 10px;
+    background-color: #fff;
+    color: #000;
+    font-size: 20px;
+    padding: 5px 10px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.edit-profile-picture:hover {
+    background-color: #ddd;
+}
+.profile-picture {
+    position: relative; 
+    /* Pour positionner le rond */
+}
+
+.profile-picture .online-indicator {
+    position: absolute;
+    top: 5px; 
+    right: 5px; 
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: green; 
+}
+@media (max-width: 845px) { /* Styles pour les écrans mobiles */
+    .bienvenue {
+        width: 95%; /* Ajuster la largeur de l'image de fond */
+        height: 80%;
+    }
+
+    .container, .container2 {
+        flex-direction: column; /* Afficher les éléments en colonne */
+        margin-top: 10px;
+    }
+
+    .onee {
+        width: 100%; /* Largeur des images sur toute la largeur de l'écran */
+    }
+}

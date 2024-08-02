@@ -1,0 +1,45 @@
+
+ .box{
+    min-height: 800px;
+    /* width: 600px; */
+    min-width: 600px;
+    background: #436fff;
+    margin-left: 600px;
+    margin-top: 30px;
+    border-radius: 15px;
+    box-shadow: 2px 11px 20px 9px black;
+}
+h2{
+    text-align: center;
+    color: white;
+}
+.input, select{
+    height: 50px;
+    width: 400px;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+input{
+    font-size: 20px;
+    color:#436fff;
+}
+.input::placeholder{
+    font-size: 20px;
+}
+.bouton{
+    height: 60px;
+    width:300px;
+    margin-left: 25%;
+    margin-top: 70px;
+    border-radius: 10px;
+    font-size: 20px;
+    color:#436fff;
+    transition: 0.6s;
+    font-weight: 800;;
+}
+.bouton:hover{
+   background: rgb(58, 58, 255);
+}
+table tr td{
+    color: white;
+}
